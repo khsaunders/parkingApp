@@ -1,0 +1,17 @@
+<!--search form-->
+
+<div id="searchWrapper">
+    <form id="searchForm" ng-controller="searchCtrl">
+        Find me parking near
+        <input class="searchForm--input" type="text" placeholder"address or zip code">
+        </input>
+        <button ng-click="searchSubmit">
+            search
+        </button>
+    </form>
+    <div class="searchResults" ng-repeat </div>
+
+<!--load search items-->
+<ul class="loadParking">
+  <li ng-repeat="spots in parking" class="spots" id ="{{spot.address}}" ng-click="logSpot()">
+    
